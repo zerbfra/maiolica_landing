@@ -1,6 +1,5 @@
 ---
 // Component imports and setup JavaScript go here!
-import logoRef from "../assets/logo_white.svg"
 ---
 
 
@@ -14,11 +13,11 @@ import logoRef from "../assets/logo_white.svg"
 		<style>
 			@font-face {
 				font-family: NeueMontreal-Regular;
-				src: url(../assets/fonts/NeueMontreal-Regular.otf);
+				src: url(/assets/fonts/NeueMontreal-Regular.otf);
 			}
 			@font-face {
 				font-family: RaptorV3-Regular;
-				src: url(../assets/fonts/RaptorV3Premium-Regular.otf);
+				src: url(/assets/fonts/RaptorV3Premium-Regular.otf);
 			}
 
 			html,body {
@@ -90,7 +89,7 @@ import logoRef from "../assets/logo_white.svg"
 
 	<body>
 		<div class="header">
-			<img src={logoRef} class="logo"/>
+			<img src={Astro.resolve('/assets/logo_white.svg')} class="logo"/>
 		</div>
 		<div class="container">
 			<span class="slogan">Il nuovo modo di essere <span class="digital">digital</span>.</span>

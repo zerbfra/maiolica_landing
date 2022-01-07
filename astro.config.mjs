@@ -10,4 +10,8 @@
 export default /** @type {import('astro').AstroUserConfig} */ ({
 	// Comment out "renderers: []" to enable Astro's default component support.
 	renderers: [],
+	buildOptions: {
+		site: 'https://zerbinatifrancesco.it/maiolica_landing',
+		sitemap: false,         // Generate sitemap (set to "false" to disable)
+	},
 });
